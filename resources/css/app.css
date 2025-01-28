@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .textarea-class {
+        @apply block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6
+    }
+    .select-input {
+        @apply mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6
+    }
+    .label {
+        @apply block text-sm font-medium leading-6 text-gray-900
+    }
+    .button-save {
+        @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+    }
+    .button-update {
+        @apply rounded-md bg-green-600 px-3 py-1 text-sm font-semibold text-white shadow-sm hover:bg-green-500 ml-2
+    }
+    .button-cancel {
+        @apply rounded-md text-sm font-semibold text-gray-900 hover:bg-gray-300 px-3 py-2
+    }
+    .button-add {
+        @apply block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+    }
+    .button-all {
+        @apply rounded-md bg-gray-500 text-white px-3 py-2 text-center text-sm font-semibold shadow-sm hover:bg-gray-700
+    }
+    .button-todo {
+        @apply rounded-md bg-blue-500 text-white px-3 py-2 text-center text-sm font-semibold shadow-sm hover:bg-blue-700
+    }
+    .button-inprogress {
+        @apply rounded-md bg-yellow-500 text-white px-3 py-2 text-center text-sm font-semibold shadow-sm hover:bg-yellow-700
+    }
+    .button-done {
+        @apply rounded-md bg-green-500 text-white px-3 py-2 text-center text-sm font-semibold shadow-sm hover:bg-green-700
+    }
+    .button-assigned {
+        @apply rounded-md bg-green-500 text-white px-3 py-2 text-center text-sm font-semibold shadow-sm hover:bg-green-700
+    }
+    .table-tbody {
+        @apply whitespace-nowrap px-3 py-4 text-sm text-gray-500
+    }
+    .table-pagination {
+        @apply border-t border-gray-200 bg-white px-4 py-3 sm:px-2
+    }
+    .table-th {
+        @apply px-3 py-3.5 text-left text-sm font-semibold text-gray-900
+    }
+    .table-tbody-span {
+        @apply inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20
+    }
+}
